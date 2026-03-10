@@ -2,6 +2,7 @@
     --primary-color: #3498db;
     --secondary-color: #f3f3f3;
     --accent-color: #c0c0c0;
+    --accent-color-2: #000000;
     --font-family: 'Open Sans', sans-serif;
 }
 
@@ -62,7 +63,7 @@ main {
 
 h1 {
     font-family: var(--font-family);
-    color: var(--primary-color);
+    color: var(--accent-color-2);
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -90,7 +91,7 @@ h2 {
 
 .card-header {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--accent-color-2);
     text-align: center;
     padding: 12px;
     font-weight: bold;
