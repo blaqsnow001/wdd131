@@ -4,16 +4,22 @@
     --font-family: 'Open Sans', sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: var(--font-family);
+}
+
 header {
+    background-color: var(--primary-color);
     padding: 1rem;
     text-align: center;
-} 
+    color: white;
+}
 
 header span {
     display: block;
@@ -21,45 +27,51 @@ header span {
     font-size: 1.2rem;
 }
 
-nav{
-
+nav {
     background-color: var(--primary-color);
     margin: 0;
-    max-width: 800%;
 }
+
 nav ul {
     list-style-type: none;
     display: flex;
+    justify-content: space-around;
 }
 
 nav a {
-	display: block;
-	color: #fff;
-	text-align: center;
-	padding: 1rem;
-	text-decoration: none;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
 }
 
 nav a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
+    color: var(--secondary-color);
 }
 
-	nav ul li {
-		flex: 1 0 auto;
+nav ul li {
+    flex: 1 0 auto;
 }
 
-h1{
+main {
+    padding: 20px;
+}
+
+h1 {
     font-family: var(--font-family);
     color: var(--primary-color);
     margin-bottom: 1rem;
     text-align: center;
 }
 
-h2{
+h2 {
     text-align: center;
     font-family: var(--font-family);
     font-size: 0.9rem;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -83,22 +95,35 @@ h2{
     font-weight: bold;
 }
 
-.card-body { padding: 20px; }
+.card-body {
+    padding: 20px;
+}
 
 .about-top {
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
 }
-.about-top img { width: 120px; height: 150px; object-fit: cover; }
+
+.about-top img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+}
 
 .about-bottom {
     display: flex;
     gap: 20px;
-    align-items: center;
+    align-items: flex-start;
 }
-.about-bottom img { width: 130px; }
-.about-bottom p { font-size: 0.9rem; }
+
+.about-bottom img {
+    width: 130px;
+}
+
+.about-bottom p {
+    font-size: 0.9rem;
+}
 
 .location-title {
     text-align: center;
@@ -109,13 +134,30 @@ h2{
     margin-bottom: 15px;
 }
 
-.card-body ul { padding-left: 20px; }
-.card-body ul li { margin-bottom: 10px; }
-.card-body ul a { color: #2c4a6e; }
+.card-body ul {
+    padding-left: 20px;
+}
 
-footer{
+.card-body ul li {
+    margin-bottom: 10px;
+}
+
+.card-body ul a {
+    color: #2c4a6e;
+}
+
+.card-body ul a:hover {
+    color: var(--primary-color);
+}
+
+footer {
     text-align: center;
     padding: 20px;
     background-color: var(--primary-color);
     color: white;
+}
+
+footer p:last-child {
+    color: yellow;
+    font-size: 0.85rem;
 }
