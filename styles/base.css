@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #3498db;
+    --primary-color: #013050;
     --secondary-color: #f3f3f3;
     --accent-color: #c0c0c0;
-    --accent-color-2: #000000;
+    --accent-color-2: #ffffff;
     --font-family: 'Open Sans', sans-serif;
 }
 
@@ -63,7 +63,7 @@ main {
 
 h1 {
     font-family: var(--font-family);
-    color: var(--accent-color-2);
+    color: var(--primary-color);
     margin-bottom: 1rem;
     text-align: center;
 }
