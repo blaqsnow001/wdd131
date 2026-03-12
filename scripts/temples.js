@@ -7,4 +7,3 @@ document.getElementById("hamburger").addEventListener('click', () => {
 document.getElementById("close-btn").addEventListener('click', () => {
     document.querySelector("nav").classList.remove("open");
 });
-
