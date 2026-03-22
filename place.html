@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Nigeria - Country information, data, and weather">
-    <meta name="author" content="Okocha Snow">
+    <meta name="author" content="Rubia Magdelena Francesco">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/place.css">
-    <script src="/scripts/place.js" defer></script>
+    <link rel="stylesheet" href="place.css">
+    <script src="place.js" defer></script>
     <title>Nigeria</title>
 </head>
 <body>
@@ -20,15 +21,21 @@
     <!-- hero-wrapper lets main cards overlay the image on wide screens -->
     <div class="hero-wrapper">
 
-        <img src="/images/africa.jpg" alt="African savanna landscape at sunset with acacia tree">
+        <picture>
+            <source media="(min-width: 768px)" srcset="africa.jpg">
+            <img src="/images/africa.webp"
+                 srcset="africa.jpg 400w, africa.jpg 800w, africa.jpg 1200w"
+                 sizes="(min-width: 768px) 100vw, 100vw"
+                 alt="African savanna landscape at sunset with acacia tree">
+        </picture>
 
         <main>
 
             <section class="data-section">
                 <h2>Data</h2>
                 <dl>
-                    <dt>Area:</dt>        <dd>587,041 sq km</dd>
-                    <dt>Population:</dt>  <dd>27,691,018</dd>
+                    <dt>Area:</dt>        <dd>923,768 sq km</dd>
+                    <dt>Population:</dt>  <dd>223,804,632</dd>
                     <dt>Capital:</dt>     <dd>Abuja</dd>
                     <dt>Languages:</dt>   <dd>English, Hausa, Yoruba, Igbo</dd>
                     <dt>Currency:</dt>    <dd>Nigerian Naira</dd>
@@ -55,7 +62,7 @@
     </div><!-- /.hero-wrapper -->
 
     <footer>
-        <p>&copy;<span id="current-year"></span> ✨ Okocha Snow ✨ Nigeria</p>
+        <p>&copy;<span id="current-year"></span> 🌸 Rubia Magdelena Francesco 🌸 Nigeria</p>
         <p>Last Modification: <span id="last-modified"></span></p>
     </footer>
 
