@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nigeria - Country information, data, and weather">
+    <meta name="author" content="Okocha Snow">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/place.css">
+    <script src="/scripts/place.js" defer></script>
+    <title>Nigeria</title>
+</head>
+<body>
+
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <!-- hero-wrapper lets main cards overlay the image on wide screens -->
+    <div class="hero-wrapper">
+
+        <img src="/images/africa.jpg" alt="African savanna landscape at sunset with acacia tree">
+
+        <main>
+
+            <section class="data-section">
+                <h2>Data</h2>
+                <dl>
+                    <dt>Area:</dt>        <dd>587,041 sq km</dd>
+                    <dt>Population:</dt>  <dd>27,691,018</dd>
+                    <dt>Capital:</dt>     <dd>Abuja</dd>
+                    <dt>Languages:</dt>   <dd>English, Hausa, Yoruba, Igbo</dd>
+                    <dt>Currency:</dt>    <dd>Nigerian Naira</dd>
+                    <dt>Time Zone:</dt>   <dd>UTC+1</dd>
+                    <dt>Calling Code:</dt><dd>+234</dd>
+                    <dt>Internet TLD:</dt><dd>.ng</dd>
+                </dl>
+            </section>
+
+            <section class="weather-section">
+                <h2>Weather</h2>
+                <!-- shown on small screens; hidden via CSS + replaced by ::after on large -->
+                <img src="/images/icon.svg" alt="Partly cloudy weather icon" class="weather-icon">
+                <dl>
+                    <dt>Temperature:</dt> <dd>10 °C</dd>
+                    <dt>Conditions:</dt>  <dd>Partly Cloudy</dd>
+                    <dt>Wind:</dt>        <dd>5 km/h</dd>
+                    <dt>Wind Chill:</dt>  <dd id="wind-chill"></dd>
+                </dl>
+            </section>
+
+        </main>
+
+    </div><!-- /.hero-wrapper -->
+
+    <footer>
+        <p>&copy;<span id="current-year"></span> ✨ Okocha Snow ✨ Nigeria</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+
+</body>
+</html>
